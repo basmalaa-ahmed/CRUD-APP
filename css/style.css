@@ -1,0 +1,9 @@
+.container{
+    width: 80%;
+    margin: 5% auto !important;
+    padding: 20px;
+}
+body{
+    background-color: rgb(13, 13, 20);
+    
+}

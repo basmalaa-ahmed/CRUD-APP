@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>CRUD Application</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center p-5 text-white">CRUD Application</h1>
+            <div>
+                <label for="fName"class="text-white">First Name</label>
+                <input type="text" id="fName" class="form-control" placeholder="Enter First Name">
+                <p id="alertfName" class="alert alert-danger d-none">Name is required</p>
+            </div>
+            <div>
+                <label for="lName" class="text-white">Last Name</label>
+                <input type="text" id="lName" class="form-control" placeholder="Enter Last Name">
+                <p id="alertlName" class="alert alert-danger d-none">Name is required</p>
+            </div>
+            <div>
+                <label for="rolln"class="text-white">Roll No</label>
+                <input type="number" id="rolln" class="form-control" placeholder="Enter Roll Number">
+                <p id="alertNum" class="alert alert-danger d-none">Name is required</p>
+            </div>
+            <button id="btnAdd" class="btn btn-success mt-4 w-100">Submit</button>
+            <button class="btn btn-success mt-4 d-none w-100" id="btnUpdate">Uptade</button>
+            <div class="search">
+                <input type="text"placeholder="Search"id="searchData" class="form-control mt-4 p-2 w-50 mx-auto">
+            </div>
+            <div class="tableForm table-responsive pt-5">
+                <table class="table table-dark table-striped">
+                    <thead>
+                        <td>First Name</td>
+                        <td>Last Name</td>
+                        <td>Roll No</td>
+                        <td>Actions</td>
+                    </thead>
+                    <tbody id="tBody">
+
+                    </tbody>
+                   
+                </table>
+            </div>
+        </div>
+        
+        <script src="jss/bootstrap.bundle.min.js"></script>
+        <script src="jss/index.js"></script>
+    </body>
+</html>
